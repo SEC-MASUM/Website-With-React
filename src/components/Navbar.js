@@ -19,24 +19,24 @@ function Navbar() {
                     <i className={press ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
                 <ul className={press ? 'nav-menu active' : 'nav-menu'}>
-                    <li>
+                    <li className='nav-item'>
                         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
-                    <li>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    <li className='nav-item'>
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                             Services
                         </Link>
                     </li>
-                    <li>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            About
+                    <li className='nav-item'>
+                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            Products
                         </Link>
                     </li>
                     <li>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Contact
+                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Sign Up
                         </Link>
                     </li>
 
